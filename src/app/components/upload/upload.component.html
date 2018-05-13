@@ -1,0 +1,12 @@
+
+
+<label for="file"><mat-icon >panorama</mat-icon></label>
+<input id="file" type="file" (change)="upload($event)" accept=".png,.jpg" />
+
+<mat-progress-bar mode="determinate" [value]="( uploadProgress | async )"></mat-progress-bar>
+
+<div class="result" *ngIf="uploadURL | async; let uploadSrc">
+  <a [href]="uploadSrc">You just uploaded this file!</a>
+</div>
+
+

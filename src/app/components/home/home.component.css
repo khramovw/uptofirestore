@@ -1,0 +1,12 @@
+.container{
+
+  display: inline-flex;
+  flex-wrap: wrap;
+
+}
+.container .example-card{
+
+  width: 19%;
+  margin: 24px 1% 0 1%;
+
+}
